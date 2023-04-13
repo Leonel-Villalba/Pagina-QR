@@ -1,0 +1,72 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    overflow: hidden;
+}
+
+.card{
+    width: 20%;
+    height: auto;
+    border: 2px solid #0000;
+    border-radius: 15px;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.img > img{
+    /* width: 250px; */
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* title */
+.title{
+    text-align: center;
+    font-weight: 700;
+}
+.title > h2{
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+/* description */
+.description{
+    text-align: center;
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+}
+.description > p{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+/* media */
+@media (max-width: 780px) {
+    .card{
+        min-width: 100%;
+        height: ;
+    }
+    .title > h2{
+        font-size: 30px;
+    }
+    .description > p{
+        font-size: 22px;
+    }
+}
